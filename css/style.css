@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 70%;
+    border: 3px solid palevioletred;
+    border-radius:34%;
+    width: 94%;
+    margin-left: 22px;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.navlist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    float:left;
+    padding: 8px 39px
+}
+
+.navlist li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(235, 223, 229);
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Kurale', serif;
+
+}
+.navlist li a:hover{
+    
+    color: wheat;
+}
+.background{
+    background: rgba(0,0,0,0.7)url('../img/back.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.boxmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 81%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+    width:30%;
+}
+.secondhalf img{
+    width: 52%;
+    border: 4px solid beige;
+    border-radius: 844px;
+    display:block;
+    margin:auto;
+}
+.text-big{
+    font-size: 38px;
+    font-family: 'Kurale', serif;
+    
+}
+.text-small{
+    font-size: 18px;
+}
+.btn-dark{
+    color: black;
+    border:2px solid black;
+    padding:5px 15px;
+    margin: 7px 3px;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-content: center;
+    margin: auto 211px;
+    font-size: 20px;
+}
+.btn{
+    padding:5px 15px;
+    margin: 7px 3px;
+    border:2px solid wheat;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: brown;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.left{
+    flex-direction: row-reverse;
+    
+}
+.para{
+    padding: 8px 65px;
+}
+.sectionTag{
+    padding: 16px 0;
+}
+.sectionSubTag{
+    font-family: 'Kurale', serif;
+}
+
+.thumbnail img{
+    width: 300px;
+    height:238px;
+    border:2px solid black;
+    margin-top: 19px;
+    border-radius: 16px;
+}
+.contact{
+    background-color: rgb(241 236 240);
+    height:833px;
+   
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+.form{
+    max-width: 62%;
+    margin:25px auto;
+    
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border:2px solid grey;
+    border-radius: 6px;
+    margin:14px 0;
+    padding: 5px 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: blanchedalmond;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+}
+.line{
+    width:33px;
+    background-color: white;
+    margin: 5px 3px;
+    height:4px;
+}
+
+@media only screen and (max-width:1140px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        height:451px;
+        flex-direction: column;
+        transition:all 0.8s ease-out;
+    }
+
+    .burger{
+        display: block;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+
+    }
+    .h-nav{
+        height:70px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align:center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .para{
+        padding: 0;
+    }
+}
+
